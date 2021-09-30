@@ -28,7 +28,7 @@ def inputModule():
 	modules = {
 		1: "cleaner",
 		2: "zipDownloader"}
-	modulesStr = "\n".join(f"{k}: {v.capitalize()}" for k, v in modules.items())
+	modulesStr = "\n".join(f"{k}: {v[0].upper() + v[1:]}" for k, v in modules.items())
 
 	try:
 		return modules[int(input(f"Select build script by number:{NL}{modulesStr}{NL}"))]
