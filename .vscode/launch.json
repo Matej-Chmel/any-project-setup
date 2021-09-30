@@ -1,0 +1,30 @@
+{
+	"configurations": [
+		{
+			"name": "Debug: Builder",
+			"console": "integratedTerminal",
+			"program": "build.py",
+			"request": "launch",
+			"type": "python"
+		},
+		{
+			"name": "Debug: Cleaner",
+			"module": "src.cleaner.main",
+			"args": [
+				"../cfg/cleaner.cfg.json"
+			],
+			"request": "launch",
+			"type": "python"
+		},
+		{
+			"name": "Debug: ZipDownloader",
+			"module": "src.zipDownloader.main",
+			"args": [
+				"../cfg/zipDownloader.cfg.json"
+			],
+			"request": "launch",
+			"type": "python"
+		}
+	],
+	"version": "0.2.0"
+}

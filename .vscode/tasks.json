@@ -1,0 +1,45 @@
+{
+	"tasks": [
+		{
+			"label": "Run: Builder",
+			"command": "python",
+			"windows": {
+				"command": "py"
+			},
+			"args": [
+				"build.py"
+			],
+			"problemMatcher": [],
+			"type": "shell"
+		},
+		{
+			"label": "Run: Cleaner",
+			"command": "python",
+			"windows": {
+				"command": "py"
+			},
+			"args": [
+				"-m",
+				"src.cleaner.main",
+				"../cfg/cleaner.cfg.json"
+			],
+			"problemMatcher": [],
+			"type": "shell"
+		},
+		{
+			"label": "Run: ZipDownloader",
+			"command": "python",
+			"windows": {
+				"command": "py"
+			},
+			"args": [
+				"-m",
+				"src.zipDownloader.main",
+				"../cfg/zipDownloader.cfg.json"
+			],
+			"problemMatcher": [],
+			"type": "shell"
+		}
+	],
+	"version": "2.0.0"
+}
